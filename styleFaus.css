@@ -1,0 +1,183 @@
+:root {
+    --oscuro: #111827;
+    --semi-oscuro: #23344d ;
+    --azul-oscuro: #2f4b6e;
+    --azul: #4c86aa;
+    --celeste: #4cc2d1;
+    --gris: #6b7ca0;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    color: var(--gris);
+    font-family: monospace;
+    background: #141e30;
+    background: -webkit-linear-gradient(to right, #243b55, #141e30);
+    background: linear-gradient(to right, #243b55, #141e30);
+  }
+  
+  ::selection {
+    background-color: rgb(148, 236, 229);
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .col {
+    width: 300px;
+    border-left: 2px solid var(--azul-oscuro);
+    border-right: 2px solid var(--azul-oscuro);
+    border-bottom: 4px solid var(--azul-oscuro);
+    background-color: var(--semi-oscuro);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    color: var(--celeste);
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  
+  .navbar {
+    background-color: var(--oscuro);
+    padding: 10px;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px ridge transparent;
+  }
+  
+  .navbar a:hover {
+    border-bottom: 3px ridge var(--celeste);
+  }
+  .navbar-dark, .navbar[data-bs-theme="dark"] {
+    --bs-navbar-color: rgba(255, 255, 255, 0.55);
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.25);
+    --bs-navbar-active-color: #fff;
+    --bs-navbar-brand-color: #fff;
+    --bs-navbar-brand-hover-color: #fff;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.1);
+    --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+}
+.navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+  --bs-navbar-hover-color: rgba(var(--bs-emphasis-color-rgb), 0.8);
+  --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+  --bs-navbar-active-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-margin-end: 1rem;
+  --bs-navbar-brand-font-size: 1.25rem;
+  --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+  --bs-navbar-nav-link-padding-x: 0.5rem;
+  --bs-navbar-toggler-padding-y: 0.25rem;
+  --bs-navbar-toggler-padding-x: 0.75rem;
+  --bs-navbar-toggler-font-size: 1.25rem;
+  --bs-navbar-toggler-icon-bg: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e);
+  --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+  --bs-navbar-toggler-border-radius: var(--bs-border-radius);
+  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
+}
+.navbar {
+  background-color: #111827;
+}
+
+.nav-link, #campanita {
+  border-bottom: 3px ridge transparent;
+  float: right;
+  border-radius: 0;
+  color: white;
+}
+
+.nav-link:hover {
+  border-bottom: 3px ridge var(--celeste);
+  transition: 0.5s;
+}
+.modal-header {
+  border-bottom: 2px solid var(--gris);
+}
+
+.modal-content {
+  background-color: var(--semi-oscuro);
+}
+
+#contacto-label {
+  margin: 0;
+}
+
+#formContacto {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+}
+.inputFormContacto {
+  background-color: var(--oscuro);
+  color: var(--gris);
+  text-align: center;
+  border: 1px solid var(--azul);
+}
+.offcanvas-header {
+  background-color: var(--oscuro);
+}
+
+#notificaciones {
+  background-color: var(--azul-oscuro);
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+  background-color: var(--oscuro);
+  color: white;
+  border: 2px solid var(--gris);
+  border-radius: 10px;
+}
